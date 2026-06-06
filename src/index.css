@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins/Poppins-Black.ttf') format('truetype');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins/Poppins-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins/Poppins-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins/Poppins-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins/Poppins-Thin.ttf') format('truetype');
+  font-weight: 100;
+}
+
+:root {
+  --primary-color: #5DE1E6;
+  --background-primary: #ffffff;
+  --background-secondary: #f3f4f6;
+  --text-primary: #000000;
+  --text-secondary: #4b5563;
+  --border-color: rgba(0, 0, 0, 0.1);
+  @apply bg-white font-poppins select-none;
+}
+
+/* Smooth theme transition for all color-related properties */
+*, *::before, *::after {
+  transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Theme toggle button animation */
+.theme-toggle-enter {
+  transform: scale(0) rotate(-180deg);
+  opacity: 0;
+}
+
+.theme-toggle-enter-active {
+  transform: scale(1) rotate(0);
+  opacity: 1;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.theme-toggle-exit {
+  transform: scale(1) rotate(0);
+  opacity: 1;
+}
+
+.theme-toggle-exit-active {
+  transform: scale(0) rotate(180deg);
+  opacity: 0;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme='dark'] {
+  --primary-color: #5DE1E6;
+  --background-primary: #1a1a1a;
+  --background-secondary: #2d2d2d;
+  --text-primary: #ffffff;
+  --text-secondary: #9ca3af;
+  --border-color: rgba(255, 255, 255, 0.1);
+}
+
+* {
+  @apply m-0 p-0;
+}
+
+#root {
+  @apply w-screen min-h-screen flex flex-col;
+  background-color: var(--background-secondary);
+  color: var(--text-primary);
+}
+
+header .active, aside .active, .profileNav .active {
+  @apply font-semibold drop-shadow-md;
+  color: var(--primary-color);
+}
+
+.header {
+  background-color: var(--background-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.search input {
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+.search-results {
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+}
+
+.search-results:hover {
+  background-color: var(--background-secondary);
+}

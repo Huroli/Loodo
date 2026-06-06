@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/loodo-logo-icon-transparent-BBlSd-KI.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loodo</title>
+    <script>
+      // Get theme from cookie before page loads
+      (function() {
+        const getCookie = (name) => {
+          const value = `; ${document.cookie}`;
+          const parts = value.split(`; ${name}=`);
+          if (parts.length === 2) return parts.pop().split(';').shift();
+          return null;
+        };
+        
+        const theme = getCookie('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-C1Mp9qg1.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-B0dH8jys.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
