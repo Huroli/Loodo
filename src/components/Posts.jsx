@@ -61,8 +61,8 @@ import model2 from '../assets/3d/apple-vision-pro-dexton/source/2.glb'
 import model3 from '../assets/3d/infernus-deadlock-hero-model/source/3.glb'
 import model4 from '../assets/3d/sneakers-seen/source/4.glb'
 
-// Model-viewer bileşenini import ediyoruz
-import '@google/model-viewer'
+// Model-viewer bileşenini import ediyoruz (sadece localde)
+
 
 // Gönderiler statik bir dizi olarak tanımlanıyor. Daha sonra dinamik bir yapıya çevrilecek.
 const postsPrev = [

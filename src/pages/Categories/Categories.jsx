@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { postsPrev } from '../../components/Posts';
-import '@google/model-viewer';
 
 function Categories() {
     // Filter posts by type

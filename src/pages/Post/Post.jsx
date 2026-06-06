@@ -4,7 +4,6 @@ import { useSelector } from 'react-redux';
 import Icons from '../../components/Icons';
 import { postsPrev } from '../../components/Posts';
 import CanvasContainer from '../../components/CanvasContainer/CanvasContainer';
-import '@google/model-viewer';
 
 function Post() {
     // useParams hook'u kullanılarak url üzerindeki gönderinin id değerine erişiliyor ve gerekli tanımlama yapılıyor.
