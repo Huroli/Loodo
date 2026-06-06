@@ -1,5 +1,5 @@
 // Medya bilgilerini almak için backend'e gönderilecek olan api isteğinin url adresi tanımlanıyor.
-const API_URL = 'http://localhost:3000/api/media';
+const API_URL = 'https://loodo-backend.onrender.com/api/media';
 
 // Yeni medya oluşturmak için gerekli olan api iletişimini sağlayacak fonksiyon tanımlanıyor.
 export const uploadMedia = async (mediaFile, mediaContent, userInformations) => {

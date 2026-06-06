@@ -1,5 +1,5 @@
 // Kullanıcı bilgilerini almak için backend'e gönderilecek olan api isteğinin url adresi tanımlanıyor.
-const API_URL = 'http://localhost:3000/api/users';
+const API_URL = 'https://loodo-backend.onrender.com/api/users';
 
 // Yeni kullanıcı oluşturmak için gerekli olan api iletişimini sağlayacak fonksiyon tanımlanıyor.
 export const createUser = async (userData) => {
