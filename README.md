@@ -1,4 +1,4 @@
-# 🚀 Loodo
+# 🚀 Loodo (Just the frontend)
 
 **The Next-Generation Social Media Platform for Creators, Developers, and Communities**
 
@@ -95,15 +95,15 @@ Our mission is to create a platform where creators can:
 - Express
 - REST API / GraphQL
 
-### Database
+### Database (inactive)
 - PostgreSQL
 - Redis
 
-### Storage
+### Storage (inactive)
 - Cloud Object Storage
 - CDN Integration
 
-### Infrastructure
+### Infrastructure (inactive)
 - Docker
 - Linux
 - Cloud Hosting
@@ -131,6 +131,56 @@ If you would like to contribute:
 
 ---
 
+## 🚀 Getting Started
+
+### Prerequisites
+
+Before running Loodo locally, make sure you have:
+
+- Node.js 20+
+- npm or pnpm
+- PostgreSQL
+- Git
+
+---
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/Huroli/Loodo.git
+cd Loodo
+```
+
+---
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+or
+
+```bash
+pnpm install
+```
+
+---
+
+### Start Development Server
+
+```bash
+npm run dev
+```
+
+The application will be available at:
+
+```text
+http://localhost:3000  (it can be different)
+```
+
+---
+
 ## 📜 License
 
 This project is licensed under the MIT License.
@@ -142,3 +192,7 @@ This project is licensed under the MIT License.
 **Create. Share. Connect. Monetize.**
 
 Welcome to Loodo.
+
+
+## AI Disclosure
+Parts of this README.md file and project documentation were generated/assisted by AI tools.
