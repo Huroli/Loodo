@@ -21,18 +21,27 @@ function Register(props, ref) {
 
     // Form gönderildikten sonra kullanıcı oluşturmak ve sisteme giriş yapmak için gerekli fonksiyon tanımlanıyor.
     const handleSubmit = async (e) => {
-        e.preventDefault();
-        try {
-            await createUser(formData);
-            setSuccess('Registration Successful!');
-            setError('');
-            await loginUser({ email: formData.email, password: formData.password });
-            navigate(0);
-        } catch (err) {
-            setError(err.message);
-            setSuccess('');
-        }
+    e.preventDefault();
+    try {
+        // Backend şemasının zorunlu kıldığı 'hashedPassword' anahtarını elinle eşitle
+        const payload = {
+            firstName: formData.firstName,
+            lastName: formData.lastName,
+            nickname: formData.nickname,
+            email: formData.email,
+            hashedPassword: formData.password // password'ü şemanın beklediği isme atadık
+        };
+
+        await createUser(payload); // Artık formData değil, hazırladığımız payload gidiyor
+        setSuccess('Registration Successful!');
+        setError('');
+        await loginUser({ email: formData.email, password: formData.password });
+        navigate(0);
+    } catch (err) {
+        setError(err.message);
+        setSuccess('');
     }
+}
 
     return (
         // Register bileşeni tanımlanıyor. Gerekli referans tanımlanıyor.
