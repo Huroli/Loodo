@@ -85,7 +85,7 @@ Our mission is to create a platform where creators can:
 > The stack may evolve as the project grows.
 
 ### Frontend
-- React
+- React & Vite
 - Next.js
 - TypeScript
 - Tailwind CSS
