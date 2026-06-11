@@ -193,6 +193,12 @@ This project is licensed under the MIT License.
 
 Welcome to Loodo.
 
+## AI Disclosure & Declaration
 
-## AI Disclosure
-Parts of this README.md file and project documentation were generated/assisted by AI tools.
+To maintain complete transparency in line with the event guidelines, this project acknowledges the utilization of Artificial Intelligence (AI) tools during its development.
+
+*   **Documentation & Copywriting:** AI was used to assist in structuring, formatting, and refining the text within this `README.md` file to ensure clarity and professional presentation.
+*   **Development Assistance:** AI tools were used as a collaborative assistant for brainstorming architecture, optimizing code snippets, and debugging backend connections. 
+
+All core logic, design choices, and implementation of **Loodo** were conceptualized, reviewed, and driven entirely by the human developer.
+
