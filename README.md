@@ -6,6 +6,11 @@ Loodo originally started out as a startup idea during the GençBizz entrepreneur
 
 Right now, this repo only contains the client-side code. I am actively working on hooking this up to a Node.js and MongoDB backend.
 
+<img width="1902" height="1064" alt="Ekran görüntüsü 2026-07-02 015448" src="https://github.com/user-attachments/assets/4b4bc443-4df7-4b5d-a05e-50cc95839992" />
+<img width="1897" height="1062" alt="Ekran görüntüsü 2026-07-02 015522" src="https://github.com/user-attachments/assets/89ac796a-7681-420f-a014-e8536cbfdf3a" />
+
+
+
 ## What is working right now
 
 My main focus has been getting the UI and user experience right before wiring up all the heavy backend logic. 
