@@ -38,7 +38,7 @@ If you want to pull this down and check out the UI:
 
 The app should be running at http://localhost:3000.
 
-Or you can go checkout  #https://loodo-puce.vercel.app/
+Or you can go checkout at https://loodo-puce.vercel.app/
 
 ## Contributing
 
