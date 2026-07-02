@@ -1,4 +1,4 @@
-# Loodo (Frontend)
+# Loodo (Frontend) PLEASE ENTER AT LEAST 8 CHARACTERS WHEN REGISTERING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 This is the frontend repository for Loodo.
 
