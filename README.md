@@ -1,5 +1,5 @@
 # Loodo (Frontend) PLEASE ENTER AT LEAST 8 CHARACTERS WHEN REGISTERING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-# Comment and other things don't work, just frontEnd
+# Comment and other things like that don't work, just frontEnd for now. :D
 This is the frontend repository for Loodo.
 
 Loodo originally started out as a startup idea during the GençBizz entrepreneurship program. The core problem I wanted to solve was fragmentation: creators, developers, and artists shouldn't need a dozen different platforms to handle communities, content sharing, and monetization. I am building this to bring all of that into one unified interface.
